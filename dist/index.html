@@ -67,11 +67,11 @@
                 <h3 class="ti">全套成品 全屋定制 橱柜系统 软装搭配</h3>
             </div>
             <div class="setMeal-nav setMeal-arrow u-slick">
-                <div class="item act"><p class="name">全屋套餐</p></div>
                 <div class="item"><p class="name">全屋套餐</p></div>
-                <div class="item"><p class="name">全屋套餐</p></div>
-                <div class="item"><p class="name">全屋套餐</p></div>
-                <div class="item"><p class="name">全屋套餐</p></div>
+                <div class="item"><p class="name">全屋套餐1</p></div>
+                <div class="item"><p class="name">全屋套餐2</p></div>
+                <div class="item"><p class="name">全屋套餐3</p></div>
+                <div class="item"><p class="name">全屋套餐4</p></div>
             </div>
             
         </div>
@@ -85,7 +85,51 @@
                     <div class="pai"><img src="img/img1.jpg" alt=""></div>
                     <div class="clearfix">
                         <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">31999</span><span class="unit">元</span></p>
-                        <span class="btn-buy"><img src="images/buy.png" alt=""></span>
+                        <span class="btn-buy btn"><img src="images/buy.png" alt=""></span>
+                    </div>
+                </a></div>
+                <div class="item"><a href="#">
+                    <div class="tac">
+                        <h4 class="ti">全屋套餐1</h4>
+                        <p class="text">15件成品+11㎡定制+3m橱柜+8.5m窗帘</p>
+                    </div>
+                    <div class="pai"><img src="img/img1.jpg" alt=""></div>
+                    <div class="clearfix">
+                        <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">31999</span><span class="unit">元</span></p>
+                        <span class="btn-buy btn"><img src="images/buy.png" alt=""></span>
+                    </div>
+                </a></div>
+                <div class="item"><a href="#">
+                    <div class="tac">
+                        <h4 class="ti">全屋套餐2</h4>
+                        <p class="text">15件成品+11㎡定制+3m橱柜+8.5m窗帘</p>
+                    </div>
+                    <div class="pai"><img src="img/img1.jpg" alt=""></div>
+                    <div class="clearfix">
+                        <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">31999</span><span class="unit">元</span></p>
+                        <span class="btn-buy btn"><img src="images/buy.png" alt=""></span>
+                    </div>
+                </a></div>
+                <div class="item"><a href="#">
+                    <div class="tac">
+                        <h4 class="ti">全屋套餐3</h4>
+                        <p class="text">15件成品+11㎡定制+3m橱柜+8.5m窗帘</p>
+                    </div>
+                    <div class="pai"><img src="img/img1.jpg" alt=""></div>
+                    <div class="clearfix">
+                        <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">31999</span><span class="unit">元</span></p>
+                        <span class="btn-buy btn"><img src="images/buy.png" alt=""></span>
+                    </div>
+                </a></div>
+                <div class="item"><a href="#">
+                    <div class="tac">
+                        <h4 class="ti">全屋套餐4</h4>
+                        <p class="text">15件成品+11㎡定制+3m橱柜+8.5m窗帘</p>
+                    </div>
+                    <div class="pai"><img src="img/img1.jpg" alt=""></div>
+                    <div class="clearfix">
+                        <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">31999</span><span class="unit">元</span></p>
+                        <span class="btn-buy btn"><img src="images/buy.png" alt=""></span>
                     </div>
                 </a></div>
             </div>  
@@ -132,9 +176,22 @@
     }
 
     $(function(){
+        $('.setMeal-nav').on('init', function(event, slick, currentSlide, nextSlide) {
+            $('.setMeal-nav').find('[data-slick-index="0"]').addClass('act');
+        });
         $('.setMeal-nav').slick({
             slidesToShow: 4,
-            slidesToScroll: 4
+            slidesToScroll: 1,
+            focusOnSelect: true
+        }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            $('.setMeal-nav .item').removeClass('act').eq(nextSlide+4).addClass('act');
+            $('.setMeal-cont').slick('slickGoTo', nextSlide);
+        });
+        $('.setMeal-cont').slick({
+            arrows: false,
+            speed: 0
+        }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            $('.setMeal-nav').slick('slickGoTo', nextSlide);
         });
     })
 
