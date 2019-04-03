@@ -91,15 +91,6 @@ a {
 	background: url(../images/black5.png);
 	display: none;
 }
-.container {
-	min-height: 600px;
-	/* overflow: hidden; */
-}
-/* @media screen and (max-width:1366px) {
-	.container {
-		min-height: 300px;
-	}
-} */
 /* pw */
 .pw { width: 1280px; margin: 0 auto; }
 @media screen and (max-width:1366px) {
