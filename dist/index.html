@@ -14,19 +14,25 @@
 <link href="css/iconfont.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
 </head>
 <body>
+<div class="page-wrap">
+    <section class="banner">
+        <div class="pai"><img src="img/banner.jpg" alt=""></div>
+    </section>
+
     <section class="activity-join-area container">
         <div class="count-down">
             <p>距离活动结束还有</p>
             <div class="time-wrap" id="time" data-date-end="2019/5/13"><span class="day"><i class="o">0</i><i class="t">2</i></span>天<span class="hour"><i class="o">0</i><i class="t">9</i></span>时<span class="minute"><i class="o">1</i><i class="t">0</i></span>分<span class="second"><i class="o">4</i><i class="t">5</i></span>秒</div>
         </div>
-        <div class="activity-form">
+        <div class="activity-form" id="activity">
             <div class="cont">
                 <form>
                     <div class="inp-wrap"><input type="text" class="inp" placeholder="您的姓名"></div>
                     <div class="inp-wrap"><input type="text" class="inp" placeholder="您的电话"></div>
-                    <div class="inp-wrap"><input type="submit" class="btn-submit" value="立即参与活动"></div>
+                    <div class="inp-wrap"><input type="submit" class="btn-submit scale" value="立即参与活动"></div>
                 </form>
             </div>
         </div>
@@ -34,21 +40,21 @@
 
     <section class="coupon-area">
         <img src="images/bg1.png" class="coupon-bg" alt="">
-        <div class="spe-coupon container"><a href="#">
+        <div class="spe-coupon container"><a href="index.html?#activity" class="activity-btn">
             <div class="pai"><img src="img/coupon.png" alt=""></div>
         </a></div>
         <article class="coupon-wrap container">
-            <ul class="coupon-list clearfix">
-                <li><a href="#">
+            <ul class="coupon-list scroll-animation clearfix">
+                <li class="trans transY"><a href="index.html?#activity" class="activity-btn">
                     <div class="pai"><img src="img/coupon1.png" alt=""></div>
                 </a></li>
-                <li><a href="#">
+                <li class="trans transY"><a href="index.html?#activity" class="activity-btn">
                     <div class="pai"><img src="img/coupon1.png" alt=""></div>
                 </a></li>
-                <li><a href="#">
+                <li class="trans transY"><a href="index.html?#activity" class="activity-btn">
                     <div class="pai"><img src="img/coupon1.png" alt=""></div>
                 </a></li>
-                <li><a href="#">
+                <li class="trans transY"><a href="index.html?#activity" class="activity-btn">
                     <div class="pai"><img src="img/coupon1.png" alt=""></div>
                 </a></li>
             </ul>
@@ -62,82 +68,294 @@
 
     <section class="setMeal-area">
         <div class="container">
-            <div class="page-title tac">
-                <h2 class="ti">一站配齐，拎包入住</h2>
-                <h3 class="ti">全套成品 全屋定制 橱柜系统 软装搭配</h3>
+            <div class="page-title tac scroll-animation">
+                <h2 class="ti splwo fadeIn">一站配齐，拎包入住</h2>
+                <h3 class="ti splwo fadeIn">全套成品 全屋定制 橱柜系统 软装搭配</h3>
             </div>
             <div class="setMeal-nav setMeal-arrow u-slick">
                 <div class="item"><p class="name">全屋套餐</p></div>
-                <div class="item"><p class="name">全屋套餐1</p></div>
-                <div class="item"><p class="name">全屋套餐2</p></div>
-                <div class="item"><p class="name">全屋套餐3</p></div>
-                <div class="item"><p class="name">全屋套餐4</p></div>
+                <div class="item"><p class="name">客餐厅</p></div>
+                <div class="item"><p class="name">现代厨房</p></div>
+                <div class="item"><p class="name">大卧室</p></div>
+                <div class="item"><p class="name">小卧室</p></div>
+                <div class="item"><p class="name">柜类定制</p></div>
+                <div class="item"><p class="name">高档窗帘</p></div>
             </div>
-            
         </div>
-        <div class="setMeal-cont-wrap container">
-            <div class="setMeal-cont u-slick">
-                <div class="item"><a href="#">
-                    <div class="tac">
-                        <h4 class="ti">全屋套餐</h4>
-                        <p class="text">15件成品+11㎡定制+3m橱柜+8.5m窗帘</p>
-                    </div>
-                    <div class="pai"><img src="img/img1.jpg" alt=""></div>
-                    <div class="clearfix">
-                        <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">31999</span><span class="unit">元</span></p>
-                        <span class="btn-buy btn"><img src="images/buy.png" alt=""></span>
-                    </div>
-                </a></div>
-                <div class="item"><a href="#">
-                    <div class="tac">
-                        <h4 class="ti">全屋套餐1</h4>
-                        <p class="text">15件成品+11㎡定制+3m橱柜+8.5m窗帘</p>
-                    </div>
-                    <div class="pai"><img src="img/img1.jpg" alt=""></div>
-                    <div class="clearfix">
-                        <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">31999</span><span class="unit">元</span></p>
-                        <span class="btn-buy btn"><img src="images/buy.png" alt=""></span>
-                    </div>
-                </a></div>
-                <div class="item"><a href="#">
-                    <div class="tac">
-                        <h4 class="ti">全屋套餐2</h4>
-                        <p class="text">15件成品+11㎡定制+3m橱柜+8.5m窗帘</p>
-                    </div>
-                    <div class="pai"><img src="img/img1.jpg" alt=""></div>
-                    <div class="clearfix">
-                        <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">31999</span><span class="unit">元</span></p>
-                        <span class="btn-buy btn"><img src="images/buy.png" alt=""></span>
-                    </div>
-                </a></div>
-                <div class="item"><a href="#">
-                    <div class="tac">
-                        <h4 class="ti">全屋套餐3</h4>
-                        <p class="text">15件成品+11㎡定制+3m橱柜+8.5m窗帘</p>
-                    </div>
-                    <div class="pai"><img src="img/img1.jpg" alt=""></div>
-                    <div class="clearfix">
-                        <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">31999</span><span class="unit">元</span></p>
-                        <span class="btn-buy btn"><img src="images/buy.png" alt=""></span>
-                    </div>
-                </a></div>
-                <div class="item"><a href="#">
-                    <div class="tac">
-                        <h4 class="ti">全屋套餐4</h4>
-                        <p class="text">15件成品+11㎡定制+3m橱柜+8.5m窗帘</p>
-                    </div>
-                    <div class="pai"><img src="img/img1.jpg" alt=""></div>
-                    <div class="clearfix">
-                        <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">31999</span><span class="unit">元</span></p>
-                        <span class="btn-buy btn"><img src="images/buy.png" alt=""></span>
-                    </div>
-                </a></div>
-            </div>  
+        <div class="scroll-animation">
+            <div class="setMeal-cont-wrap container trans transY">
+                <div class="setMeal-cont u-slick">
+                    <div class="item"><a href="index.html?#activity" class="activity-btn">
+                        <div class="tac">
+                            <h4 class="ti">全屋套餐</h4>
+                            <p class="text">15件成品+11㎡定制+3m橱柜+8.5m窗帘</p>
+                        </div>
+                        <div class="pai"><img src="img/1.jpg" alt=""></div>
+                        <div class="clearfix">
+                            <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">31999</span><span class="unit">元</span></p>
+                            <span class="btn-buy btn scale"><img src="images/buy.png" alt=""></span>
+                        </div>
+                    </a></div>
+                    <div class="item"><a href="index.html?#activity" class="activity-btn">
+                        <div class="tac">
+                            <h4 class="ti">客餐厅</h4>
+                            <p class="text">布艺沙发三选一、茶几电视柜二选一、餐桌椅二选一</p>
+                        </div>
+                        <div class="pai"><img src="img/2.jpg" alt=""></div>
+                        <div class="clearfix">
+                            <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">9999</span><span class="unit">元</span></p>
+                            <span class="btn-buy btn scale"><img src="images/buy.png" alt=""></span>
+                        </div>
+                    </a></div>
+                    <div class="item"><a href="index.html?#activity" class="activity-btn">
+                        <div class="tac">
+                            <h4 class="ti">现代厨房</h4>
+                            <p class="text">3m地柜+3m台面+1m吊柜+1套水盆，四种配色随心挑选</p>
+                        </div>
+                        <div class="pai"><img src="img/3.jpg" alt=""></div>
+                        <div class="clearfix">
+                            <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">5399</span><span class="unit">元</span></p>
+                            <span class="btn-buy btn scale"><img src="images/buy.png" alt=""></span>
+                        </div>
+                    </a></div>
+                    <div class="item"><a href="index.html?#activity" class="activity-btn">
+                        <div class="tac">
+                            <h4 class="ti">大卧室</h4>
+                            <p class="text">1.8m大床+床垫+床头柜*2</p>
+                        </div>
+                        <div class="pai"><img src="img/4.jpg" alt=""></div>
+                        <div class="clearfix">
+                            <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">3230</span><span class="unit">元</span></p>
+                            <span class="btn-buy btn scale"><img src="images/buy.png" alt=""></span>
+                        </div>
+                    </a></div>
+                    <div class="item"><a href="index.html?#activity" class="activity-btn">
+                        <div class="tac">
+                            <h4 class="ti">小卧室</h4>
+                            <p class="text">1.5m床+床垫+床头柜*1</p>
+                        </div>
+                        <div class="pai"><img src="img/5.jpg" alt=""></div>
+                        <div class="clearfix">
+                            <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">2690</span><span class="unit">元</span></p>
+                            <span class="btn-buy btn scale"><img src="images/buy.png" alt=""></span>
+                        </div>
+                    </a></div>
+                    <div class="item"><a href="index.html?#activity" class="activity-btn">
+                        <div class="tac">
+                            <h4 class="ti">柜类定制</h4>
+                            <p class="text">11㎡定制柜，衣柜、酒柜、榻榻米、玄关，21款个性面板随心搭</p>
+                        </div>
+                        <div class="pai"><img src="img/6.jpg" alt=""></div>
+                        <div class="clearfix">
+                            <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">9240</span><span class="unit">元</span></p>
+                            <span class="btn-buy btn scale"><img src="images/buy.png" alt=""></span>
+                        </div>
+                    </a></div>
+                    <div class="item"><a href="index.html?#activity" class="activity-btn">
+                        <div class="tac">
+                            <h4 class="ti">高档窗帘</h4>
+                            <p class="text">8.5m成品窗帘，23种款式，完美匹配新家</p>
+                        </div>
+                        <div class="pai"><img src="img/7.jpg" alt=""></div>
+                        <div class="clearfix">
+                            <p class="setMeal-price"><span class="tit">套餐<br>一口价</span><span class="money">2380</span><span class="unit">元</span></p>
+                            <span class="btn-buy btn scale"><img src="images/buy.png" alt=""></span>
+                        </div>
+                    </a></div>
+                </div>  
+            </div>
         </div>
     </section>
 
+    <section class="lowPrice-grab-area">
+        <div class="container">
+            <div class="page-title tac scroll-animation">
+                <h2 class="ti splwo fadeIn">1元秒5999新品床垫</h2>
+                <h3 class="ti splwo fadeIn">每场秒杀数量有限，秒完即止</h3>
+            </div>
+            <div class="scroll-animation">
+                <div class="lowPrice-grab-group-wrap trans transY">
+                    <h4 class="lowPrice-name">1元抢5999元</h4>
+                    <div class="lowPrice-grab-group lowPrice-arrow u-slick">
+                        <div class="item"><a href="index.html?#activity" class="activity-btn">
+                            <div class="pai"><img src="img/img2.jpg" alt=""></div>
+                        </a></div>
+                        <div class="item"><a href="index.html?#activity" class="activity-btn">
+                            <div class="pai"><img src="img/img17.jpg" alt=""></div>
+                        </a></div>
+                    </div>
+                </div>
+                <ul class="lowPrice-grab-list clearfix">
+                    <li class="trans transY"><a href="index.html?#activity" class="activity-btn">
+                        <div class="pai"><img src="img/img3.jpg" alt=""></div>
+                        <h4 class="lowPrice-name">1元抢128元</h4>
+                        <h5 class="nowti">DJ00012小圆凳</h5>
+                    </a></li>
+                    <li class="trans transY"><a href="index.html?#activity" class="activity-btn">
+                        <div class="pai"><img src="img/img4.jpg" alt=""></div>
+                        <h4 class="lowPrice-name">1元抢399元</h4>
+                        <h5 class="nowti">DJ00012小圆凳</h5>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="lowPrice-time clearfix">
+                <a href="index.html?#activity" class="btn btn-order scale activity-btn">抢先预约</a>
+                <div class="time">
+                    <p class="date">活动时间<br>4月27日-5月5日</p>
+                    <p class="slot"><span class="num">1</span>下午15：00开始</p>
+                    <p class="slot"><span class="num">2</span>下午15：30开始</p>
+                </div>
+            </div>
+        </div>
+        <article class="freeTx">
+            <div class="container">
+                <p>温馨提示：</p>
+                <p>1.秒杀时间：4.27-5.5下午15：00、15：30，1天两场秒杀活动；</p>
+                <p>2.秒杀前须付款1元，可参加多场秒杀，每一场秒杀须付款1次，无论秒杀成功与否，不予退还；</p>
+                <p>3.秒杀的产品有5999元新品床垫、399元音乐助眠枕、128元优凳。数量有限，秒完即止；</p>
+                <p>4.活动详细请咨询当地掌上明珠家居门店。</p>
+            </div>
+        </article>
+    </section>
 
+    <section class="about-us">
+        <div class="page-title container tac scroll-animation">
+            <h2 class="ti">质爱相伴，匠心30年</h2>
+            <h3 class="ti">1989-2019，掌上明珠家居专注美好家居</h3>
+        </div>
+        <ul class="achievement-list scroll-animation clearfix">
+            <li class="trans transY">
+                <div class="pai"><img src="img/img5.jpg" alt=""></div>
+                <div class="txts tac">
+                    <p class="num"><strong>1300</strong>亩</p>
+                    <p class="text">质造梦工厂</p>
+                </div>
+            </li>
+            <li class="trans transY">
+                <div class="pai"><img src="img/img6.jpg" alt=""></div>
+                <div class="txts tac">
+                    <p class="num"><strong>100+</strong></p>
+                    <p class="text">重量级荣誉</p>
+                </div>
+            </li>
+            <li class="trans transY">
+                <div class="pai"><img src="img/img7.jpg" alt=""></div>
+                <div class="txts tac">
+                    <p class="num"><strong>1500+</strong></p>
+                    <p class="text">门店</p>
+                </div>
+            </li>
+            <li class="trans transY">
+                <div class="pai"><img src="img/img8.jpg" alt=""></div>
+                <div class="txts tac">
+                    <p class="num"><strong>10000+</strong></p>
+                    <p class="text">专业安装师</p>
+                </div>
+            </li>
+            <li class="trans transY">
+                <div class="pai"><img src="img/img9.jpg" alt=""></div>
+                <div class="txts tac">
+                    <p class="num"><strong>30</strong>年</p>
+                    <p class="text">匠心修为</p>
+                </div>
+            </li>
+            <li class="trans transY">
+                <div class="pai"><img src="img/img10.jpg" alt=""></div>
+                <div class="txts tac">
+                    <p class="num"><strong>2000</strong>万</p>
+                    <p class="text">用户口碑相传</p>
+                </div>
+            </li>
+            <li class="trans transY">
+                <div class="pai"><img src="img/img11.jpg" alt=""></div>
+                <div class="txts tac">
+                    <p class="num"><em>成都+米兰</em></p>
+                    <p class="text">2大研发基地</p>
+                </div>
+            </li>
+            <li class="trans transY">
+                <div class="pai"><img src="img/img12.jpg" alt=""></div>
+                <div class="txts tac">
+                    <p class="num"><strong>3000+</strong></p>
+                    <p class="text">定制模块</p>
+                </div>
+            </li>
+            <li class="trans transY">
+                <div class="pai"><img src="img/img13.jpg" alt=""></div>
+                <div class="txts tac">
+                    <p class="num"><strong>10000+</strong></p>
+                    <p class="text">家居解决方案</p>
+                </div>
+            </li>
+        </ul>
+    </section>
 
+    <section class="service-area">
+        <div class="page-title container tac scroll-animation">
+            <h2 class="ti splwo fadeIn">质爱呵护，4S级铂金服务</h2>
+            <h3 class="ti splwo fadeIn">省钱，省力，更省心</h3>
+        </div>
+        <ul class="service-list clearfix scroll-animation">
+            <li class="trans transY">
+                <div class="cont" style="background-image: url(img/img14.jpg);"></div>
+            </li>
+            <li class="trans transY">
+                <div class="cont" style="background-image: url(images/bg2.png);">
+                    <h4 class="ti tac">售前服务4s</h4>
+                    <div class="freeTx tac">
+                        免费为您上门量尺<br>
+                        免费指导空间布局<br>
+                        免费家装风格咨询<br>
+                        VR全景模拟体验<br>
+                    </div>
+                </div>
+            </li>
+            <li class="trans transY">
+                <div class="cont" style="background-image: url(img/img15.jpg);"></div>
+            </li>
+            <li class="trans transY">
+                <div class="cont" style="background-image: url(images/bg2.png);">
+                    <h4 class="ti tac">售中服务4s</h4>
+                    <div class="freeTx tac">
+                        量身定制全屋解决方案<br>
+                        专业家居顾问一对一服务<br>
+                        好产品现场体验见证<br>
+                        全屋家居精准预算服务<br>
+                    </div>
+                </div>
+            </li>
+            <li class="trans transY">
+                <div class="cont" style="background-image: url(img/img16.jpg);"></div>
+            </li>
+            <li class="trans transY">
+                <div class="cont" style="background-image: url(images/bg2.png);">
+                    <h4 class="ti tac">售后服务4s</h4>
+                    <div class="freeTx tac">
+                        免费无尘安装<br>
+                        30天质量换货<br>
+                        360天免费维修<br>
+                        沙发内架10年品质保证<br>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slogan-area container">
+        <div class="move-bg"><img src="images/bg3.png" alt=""></div>
+        <div class="page-title container tac scroll-animation">
+            <h2 class="ti splwo fadeIn">掌上明珠家居</h2>
+            <h3 class="ti splwo fadeIn">2000万户家庭信赖之选</h3>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="clearfix container">
+            <div id="top"><span class="sj sj-t"></span>返回顶部</div>
+            <a href="index.html?#activity" class="immediately-buy activity-btn">全屋套餐价，只要<span class="num scale">31999</span><span class="btn-rob scale">抢</span></a>
+        </div>
+    </section>
+</div>
 <script src="js/plugin.js"></script>
 <script src="js/page.js"></script>
 <script>
@@ -182,7 +400,14 @@
         $('.setMeal-nav').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
-            focusOnSelect: true
+            focusOnSelect: true,
+            responsive: [{
+                breakpoint: 482,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+            ]
         }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
             $('.setMeal-nav .item').removeClass('act').eq(nextSlide+4).addClass('act');
             $('.setMeal-cont').slick('slickGoTo', nextSlide);
@@ -192,6 +417,38 @@
             speed: 0
         }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
             $('.setMeal-nav').slick('slickGoTo', nextSlide);
+        });
+        $('.lowPrice-grab-group').slick();
+        $('.achievement-list li').each(function(i, e) {
+            $(this).css({
+                'transition-delay': 200*i + 'ms',
+                '-webkit-transition-delay': 200*i + 'ms'
+            });
+        });
+        $('.service-list li').each(function(i, e) {
+            $(this).css({
+                'transition-delay': 200*i + 'ms',
+                '-webkit-transition-delay': 200*i + 'ms'
+            });
+        });
+        $('.lowPrice-grab-list li').each(function(i, e) {
+            $(this).css({
+                'transition-delay': 400 + 200*i + 'ms',
+                '-webkit-transition-delay': 400 + 200*i + 'ms'
+            });
+        });
+        $('.coupon-list li').each(function(i, e) {
+            $(this).css({
+                'transition-delay': 200*i + 'ms',
+                '-webkit-transition-delay': 200*i + 'ms'
+            });
+        });
+        $('.activity-btn').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top}, 800);
+            }
         });
     })
 

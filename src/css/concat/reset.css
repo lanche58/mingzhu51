@@ -1,4 +1,5 @@
 *{ outline: none; box-sizing: border-box; }
+html{ font-size: 100%; }
 blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {margin: 0; padding: 0; }
 body,
 button,
@@ -8,9 +9,8 @@ textarea {
     line-height: 1.8;
     font-family: arial, "times new roman", tahoma, "Microsoft Yahei", "微软雅黑", "Microsoft JhengHei", "微软正黑体", sans-serif;
     color: #666;
-    font-size: 0.875rem;
+    font-size: 0.14rem;
 }
-
 h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal; }
 b, cite, code, em, i, small, th {font-style: normal; }
 ol, ul {list-style: none; }

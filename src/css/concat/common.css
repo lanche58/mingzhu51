@@ -422,7 +422,7 @@ a {
 }
 .active .fadeIn i{-webkit-animation:fadeIn 1s both;-moz-animation:fadeIn 1s both;animation:fadeIn 1s both}
 /* animation end */
-@media screen and (min-width:1025px){
+/* @media screen and (min-width:1025px){ */
 .gray img { filter: grayscale(100%); }
 .gray:hover img { filter: grayscale(0); }
 .scapic:hover img { transform: scale(1.1); }
@@ -465,7 +465,7 @@ a {
 .active .am-delay-10 { animation-delay: 1000ms; }
 .active .am-delay-11 { animation-delay: 1100ms; }
 .active .am-delay-12 { animation-delay: 1200ms; }
-} /* 1153 */
+ /* 1153 */
 
 /* btn效果 */
 .bubbly-button:before, .bubbly-button:after { position: absolute; content: ""; display: block; width: 140%; height: 100%; left: -20%; transition: all ease-in-out 0.5s; background-repeat: no-repeat; }
@@ -608,3 +608,15 @@ a.pswp__share--download:hover { background: #DDD; }
 .pswp__element--disabled { display: none !important; }
 .pswp--minimal--dark .pswp__top-bar { background: none; }
 /* Look at the big picture end */
+.scale{animation:btns 1.2s infinite;-webkit-animation:btns 1.2s infinite;-moz-animation:btns 1.2s infinite;-o-animation:btns 1.2s infinite;-ms-animation:btns 1.2s infinite;}
+@keyframes btns {0%{transform:scale(1,1)}50%{ transform:scale(0.9,0.9)}100%{transform:scale(1,1)}}
+@keyframes fadeIn{
+	0%{opacity:0}
+	100%{opacity:1}
+	}
+.active .fadeIn i{-webkit-animation:fadeIn 1s both;-moz-animation:fadeIn 1s both;animation:fadeIn 1s both}
+
+@keyframes cloudMove {
+    0% { transform: translate(-30%); }
+    100% { transform: translate(100%); }
+}
