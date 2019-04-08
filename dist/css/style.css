@@ -845,9 +845,11 @@ a.pswp__share--download:hover{background:#ddd}
 .service-list .cont{padding-top:.55rem;height:2.8rem;background-position:center center;background-repeat:no-repeat;background-size:cover;background-color:#b2201f;color:#fff;font-size:.2rem}
 .service-list .ti{font-size:.3rem;margin-bottom:.04rem}
 .slogan-area{position:relative;z-index:9;padding-top:.58rem;padding-bottom:1.66rem;background:#f2f2f2;overflow:hidden}
-.footer{position:fixed;left:0;right:0;bottom:0;z-index:699}
+.footer{position:fixed;left:0;right:0;bottom:5px;z-index:699;text-align:center}
 .footer .container{padding-right:.15rem;padding-top:.1rem;padding-bottom:.1rem;background:#b2201f;color:#fff}
 .footer a{color:#fff}
+.footer img{max-width:100%;vertical-align:bottom}
+.footer .rob{position:absolute;left:0;right:0;top:0}
 #top{float:right;padding-top:.17rem;width:.96rem;height:.86rem;background:#c5ab2b;text-align:center;font-size:.18rem}
 #top .sj{display:block;margin:0 auto .05rem;border-left-width:.14rem;border-right-width:.14rem;border-bottom-width:.15rem}
 .immediately-buy{display:block;overflow:hidden;line-height:.7rem;padding-top:.08rem;font-size:.3rem}
@@ -861,3 +863,16 @@ a.pswp__share--download:hover{background:#ddd}
 #top{width:1.16rem}
 }
 .page-wrap{width:750px;margin:0 auto;max-width:100%}
+@-webkit-keyframes upDown{
+0%{-webkit-transform:none;transform:none}
+100%{-webkit-transform:translateY(-10%);transform:translateY(-10%)}
+}
+@-moz-keyframes upDown{
+0%{-moz-transform:none;transform:none}
+100%{-moz-transform:translateY(-10%);transform:translateY(-10%)}
+}
+@keyframes upDown{
+0%{-webkit-transform:none;-moz-transform:none;transform:none}
+100%{-webkit-transform:translateY(-10%);-moz-transform:translateY(-10%);transform:translateY(-10%)}
+}
+.upDown{-webkit-animation:upDown 1.2s linear alternate infinite;-moz-animation:upDown 1.2s linear alternate infinite;animation:upDown 1.2s linear alternate infinite}

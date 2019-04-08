@@ -501,8 +501,9 @@
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 5px;
     z-index: 699;
+    text-align: center;
     .container{
         padding-right: 0.15rem;
         padding-top: 0.1rem;
@@ -512,6 +513,14 @@
     }
     a{
         color: #fff;
+    }
+    img{
+        max-width: 100%;
+        vertical-align: bottom;
+    }
+    .rob{
+        @include plr;
+        top: 0;
     }
 }
 
@@ -586,4 +595,13 @@
     width: 750px;
     margin: 0 auto;
     max-width: 100%;
+}
+
+@keyframes upDown{
+    0%{ transform: none; }
+    100%{ transform: translateY(-10%); }
+}
+
+.upDown{
+    animation: upDown 1.2s linear alternate infinite;
 }

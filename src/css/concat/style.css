@@ -427,8 +427,9 @@
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
-  z-index: 699; }
+  bottom: 5px;
+  z-index: 699;
+  text-align: center; }
   .footer .container {
     padding-right: 0.15rem;
     padding-top: 0.1rem;
@@ -437,6 +438,14 @@
     color: #fff; }
   .footer a {
     color: #fff; }
+  .footer img {
+    max-width: 100%;
+    vertical-align: bottom; }
+  .footer .rob {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; }
 
 #top {
   float: right;
@@ -502,3 +511,12 @@
   width: 750px;
   margin: 0 auto;
   max-width: 100%; }
+
+@keyframes upDown {
+  0% {
+    transform: none; }
+  100% {
+    transform: translateY(-10%); } }
+
+.upDown {
+  animation: upDown 1.2s linear alternate infinite; }
