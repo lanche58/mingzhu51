@@ -26,33 +26,33 @@ a {
 	background: url(../images/black5.png);
 	overflow: hidden;
 }
-.ly-anim {
+/* .ly-anim {
 	opacity: 0;
 	visibility: hidden;
 	transition: 600ms;
-}
-.ly-anim .ly-cont {
+} */
+/* .ly-anim .ly-cont {
 	transform: translateX(10%);
 	opacity: 0;
 	visibility: hidden;
 	transition: 600ms;
-}
-.ly-box.show.ly-anim {
+} */
+/* .ly-box.show.ly-anim {
 	opacity: 1;
 	visibility: visible;
-}
-.ly-box.show.ly-anim .ly-cont {
+} */
+/* .ly-box.show.ly-anim .ly-cont {
 	transform: none;
 	opacity: 1;
 	visibility: visible;
-}
+} */
 .ly-cont {
-	background: #fff;
+	/* background: #fff; */
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	/* top: 50%;
+	left: 50%; */
 }
-@media screen and (max-width:1024px) {
+/* @media screen and (max-width:1024px) {
 	.ly-cont {
 		position: relative;
 		width: 100%;
@@ -61,7 +61,7 @@ a {
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
 	}
-}
+} */
 .header {
 	position: fixed;
 	z-index: 1010;

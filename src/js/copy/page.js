@@ -329,39 +329,40 @@ function setImgMax(img, imgW, imgH, tW, tH) {
 };
 
 // 弹出层
-function setLayer(addr){
-    $.ajax({
-        url: addr,
-        dataType: 'html',
-        success: function(data){
-            if (data == "" || data == null) {
-                return;
-            } else {
-                $('body').append(data);
-                $('html').addClass('open'); 
-                setTimeout(function(){
-                    $('.ly-box').addClass('show');
-                }, 100);
-            }
-        },
-        error: function(XMLHttpRequest, textStatus, errorThrown){ $('.ly-box').remove(); }
-    });
-    $(document).on(_click, '.ly-close', function(e){
-        e.preventDefault();
-        $('.ly-box').remove();
-        $('html').removeClass('open');
-    });
-    $(document).on(_click, '.ly-box', function(e){
-        if ($(e.target).hasClass('ly-box')) {
-            $('.ly-box').remove();
-            $('html').removeClass('open');
-        }
-    })
-};
 $(document).on(_click, '.ly-btn', function(e){
     e.preventDefault();
-    setLayer($(this).attr('href'));
+    $('.ly-box').stop().fadeIn();
+    $('.receive-popup').show();
 });
+
+$(document).on(_click, '.coupon-btn', function(e){
+    e.preventDefault();
+    $('.ly-box').stop().fadeIn();
+    $('.receive-popup').show();
+    $('.receive-popup .btn-submit').addClass('btn-success');
+});
+
+$(document).on(_click, '.btn-success', function(e){
+    e.preventDefault();
+    $('.receive-popup').hide();
+    $('.receive-success').stop().fadeIn();
+});
+
+$(document).on(_click, '.ly-close', function(e){
+    e.preventDefault();
+    $('.ly-box').stop().fadeOut();
+    $('.receive-popup').hide();
+    $('.receive-success').hide();
+});
+
+$(document).on(_click, '.ly-box', function(e){
+    if ($(e.target).hasClass('ly-box')) {
+        $('.ly-box').stop().fadeOut();
+        $('.receive-popup').hide();
+        $('.receive-success').hide();
+    }
+})
+
 
 // 截图文字段为一个一个
 function splitWords(el) {

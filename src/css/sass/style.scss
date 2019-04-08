@@ -492,7 +492,7 @@
     position: relative;
     z-index: 9;
     padding-top: 0.58rem;
-    padding-bottom: 1.66rem;
+    padding-bottom: 2.59rem;
     background: $hc3;
     overflow: hidden;
 }
@@ -604,4 +604,75 @@
 
 .upDown{
     animation: upDown 1.2s linear alternate infinite;
+}
+
+.ly-box{
+    background: $fc1;
+    display: none;
+    .icon{
+        position: absolute;
+        z-index: 199;
+        bottom: 100%;
+        right: -0.1rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        margin-bottom: 0.25rem;
+        line-height:  0.6rem;
+        text-align: center;
+        color: #fff;
+        font-size: 0.24rem;
+        &:after{
+            @include ba;
+            @include tblr;
+            border: 0.02rem solid #fff;
+            border-radius: 50%;
+        }
+    }
+}
+
+.ly-cont{
+    left: 6%;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.receive-popup{
+    display: none;
+    padding: 0.8rem 20% 0.6rem;
+    background: #fff;
+    .inp-wrap + .inp-wrap{
+        .inp2{
+            margin-top: 0.27rem;
+        }
+    }
+    .btn-submit{
+        width: 3rem;
+        margin-top: 0.35rem;
+    }
+}
+
+.inp2{
+    border: 1px solid $hc1;
+    border-radius: 0.14rem;
+    height: 0.78rem;
+    width: 100%;
+    text-align: center;
+    color: $hc4;
+    font-size: 0.26rem;
+    @include mt3;
+    &::-webkit-input-placeholder{
+        color: $hc4;
+    }
+    &:focus{
+        border-color: $mc1;
+    }
+}
+
+.receive-success{
+    display: none;
+    > img{
+        vertical-align: bottom;
+        width: 5.26rem;
+    }
 }

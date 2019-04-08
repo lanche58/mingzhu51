@@ -419,7 +419,7 @@
   position: relative;
   z-index: 9;
   padding-top: 0.58rem;
-  padding-bottom: 1.66rem;
+  padding-bottom: 2.59rem;
   background: #f2f2f2;
   overflow: hidden; }
 
@@ -520,3 +520,64 @@
 
 .upDown {
   animation: upDown 1.2s linear alternate infinite; }
+
+.ly-box {
+  background: #333;
+  display: none; }
+  .ly-box .icon {
+    position: absolute;
+    z-index: 199;
+    bottom: 100%;
+    right: -0.1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-bottom: 0.25rem;
+    line-height: 0.6rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.24rem; }
+    .ly-box .icon:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 0.02rem solid #fff;
+      border-radius: 50%; }
+
+.ly-cont {
+  left: 6%;
+  right: 6%;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.receive-popup {
+  display: none;
+  padding: 0.8rem 20% 0.6rem;
+  background: #fff; }
+  .receive-popup .inp-wrap + .inp-wrap .inp2 {
+    margin-top: 0.27rem; }
+  .receive-popup .btn-submit {
+    width: 3rem;
+    margin-top: 0.35rem; }
+
+.inp2 {
+  border: 1px solid #ccc;
+  border-radius: 0.14rem;
+  height: 0.78rem;
+  width: 100%;
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 0.26rem;
+  transition: 300ms; }
+  .inp2::-webkit-input-placeholder {
+    color: #b3b3b3; }
+  .inp2:focus {
+    border-color: #c33d3c; }
+
+.receive-success {
+  display: none; }
+  .receive-success > img {
+    vertical-align: bottom;
+    width: 5.26rem; }
