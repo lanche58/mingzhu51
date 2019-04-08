@@ -333,6 +333,7 @@ $(document).on(_click, '.ly-btn', function(e){
     e.preventDefault();
     $('.ly-box').stop().fadeIn();
     $('.receive-popup').show();
+    $('html').addClass('open');
 });
 
 $(document).on(_click, '.coupon-btn', function(e){
@@ -340,6 +341,7 @@ $(document).on(_click, '.coupon-btn', function(e){
     $('.ly-box').stop().fadeIn();
     $('.receive-popup').show();
     $('.receive-popup .btn-submit').addClass('btn-success');
+    $('html').addClass('open');
 });
 
 $(document).on(_click, '.btn-success', function(e){
@@ -353,6 +355,8 @@ $(document).on(_click, '.ly-close', function(e){
     $('.ly-box').stop().fadeOut();
     $('.receive-popup').hide();
     $('.receive-success').hide();
+    $('html').removeClass('open');
+    $('.receive-popup .btn-submit').removeClass('btn-success');
 });
 
 $(document).on(_click, '.ly-box', function(e){
@@ -360,6 +364,8 @@ $(document).on(_click, '.ly-box', function(e){
         $('.ly-box').stop().fadeOut();
         $('.receive-popup').hide();
         $('.receive-success').hide();
+        $('html').removeClass('open');
+        $('.receive-popup .btn-submit').removeClass('btn-success');
     }
 })
 
