@@ -879,5 +879,5 @@ a.pswp__share--download:hover{background:#ddd}
 .inp2{border:1px solid #ccc;border-radius:.14rem;height:.78rem;width:100%;text-align:center;color:#b3b3b3;font-size:.26rem;-webkit-transition:.3s;-moz-transition:.3s;transition:.3s}
 .inp2::-webkit-input-placeholder{color:#b3b3b3}
 .inp2:focus{border-color:#c33d3c}
-.receive-success{display:none}
+.receive-success{display:none;text-align:center}
 .receive-success>img{vertical-align:bottom;width:5.26rem}

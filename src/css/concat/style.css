@@ -577,7 +577,8 @@
     border-color: #c33d3c; }
 
 .receive-success {
-  display: none; }
+  display: none;
+  text-align: center; }
   .receive-success > img {
     vertical-align: bottom;
     width: 5.26rem; }
