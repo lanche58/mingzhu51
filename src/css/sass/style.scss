@@ -99,6 +99,14 @@
     padding-bottom: 0.5rem;
     background: $mc2;
     .pai{ padding-bottom: (264 / 655) * 100%; }
+    .receive{
+        width: 1.16rem;
+        height: auto;
+        top: 50%;
+        margin-top: -0.58rem;
+        right: 0;
+        left: auto;
+    }
 }
 
 .coupon-wrap{

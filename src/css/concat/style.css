@@ -79,6 +79,13 @@
   background: #fee6cc; }
   .spe-coupon .pai {
     padding-bottom: 40.30534%; }
+  .spe-coupon .receive {
+    width: 1.16rem;
+    height: auto;
+    top: 50%;
+    margin-top: -0.58rem;
+    right: 0;
+    left: auto; }
 
 .coupon-wrap {
   padding-top: 0.35rem;

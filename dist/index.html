@@ -22,12 +22,12 @@
         <div class="pai"><img src="img/banner.jpg" alt=""></div>
     </section>
 
-    <section class="activity-join-area container">
+    <section class="activity-join-area container" id="activity">
         <div class="count-down">
             <p>距离活动结束还有</p>
             <div class="time-wrap" id="time" data-date-end="2019/5/13"><span class="day"><i class="o">0</i><i class="t">2</i></span>天<span class="hour"><i class="o">0</i><i class="t">9</i></span>时<span class="minute"><i class="o">1</i><i class="t">0</i></span>分<span class="second"><i class="o">4</i><i class="t">5</i></span>秒</div>
         </div>
-        <div class="activity-form" id="activity">
+        <div class="activity-form">
             <div class="cont">
                 <form>
                     <div class="inp-wrap"><input type="text" class="inp" placeholder="您的姓名"></div>
@@ -41,7 +41,7 @@
     <section class="coupon-area">
         <img src="images/bg1.png" class="coupon-bg" alt="">
         <div class="spe-coupon container"><a href="index.html?#activity" class="activity-btn">
-            <div class="pai"><img src="img/coupon.png" alt=""></div>
+            <div class="pai"><img src="img/coupon.png" alt=""><img src="img/coupon-btn.png" class="receive scale" alt=""></div>
         </a></div>
         <article class="coupon-wrap container">
             <ul class="coupon-list scroll-animation clearfix">
@@ -49,13 +49,13 @@
                     <div class="pai"><img src="img/coupon1.png" alt=""></div>
                 </a></li>
                 <li class="trans transY"><a href="index.html?#activity" class="activity-btn">
-                    <div class="pai"><img src="img/coupon1.png" alt=""></div>
+                    <div class="pai"><img src="img/coupon2.png" alt=""></div>
                 </a></li>
                 <li class="trans transY"><a href="index.html?#activity" class="activity-btn">
-                    <div class="pai"><img src="img/coupon1.png" alt=""></div>
+                    <div class="pai"><img src="img/coupon3.png" alt=""></div>
                 </a></li>
                 <li class="trans transY"><a href="index.html?#activity" class="activity-btn">
-                    <div class="pai"><img src="img/coupon1.png" alt=""></div>
+                    <div class="pai"><img src="img/coupon4.png" alt=""></div>
                 </a></li>
             </ul>
             <div class="freeTx">
@@ -352,7 +352,7 @@
     <section class="footer">
         <div class="clearfix container">
             <div id="top"><span class="sj sj-t"></span>返回顶部</div>
-            <a href="index.html?#activity" class="immediately-buy activity-btn">全屋套餐价，只要<span class="num scale">31999</span><span class="btn-rob scale">抢</span></a>
+            <a href="index.html?#activity" class="immediately-buy activity-btn">百万家装大礼包免费送<span class="btn-rob scale">抢</span></a>
         </div>
     </section>
 </div>
@@ -363,8 +363,9 @@
     executeCountDown(endDate);
 
     function executeCountDown(end) {
-        countDown(end);
-        setTimeout(function(){
+        var value = countDown(end);
+        var timer = setTimeout(function(){
+            if (value <= 0) { clearTimeout(timer); return; }
             executeCountDown(end);
         }, 1000);
     }
@@ -373,10 +374,17 @@
         var date = new Date();
         var total = Date.parse(end) - date.getTime();
 
-        var second = parseInt(total / 1000 % 60);
-        var minute = parseInt(total / 1000 / 60 % 60);
-        var hour = parseInt(total / 1000 / 60 / 60 % 24);
-        var day = parseInt(total / 1000 / 60 / 60 / 24);
+        if (total <= 0) {
+            var second = 0;
+            var minute = 0;
+            var hour = 0;
+            var day = 0;
+        } else {
+            var second = parseInt(total / 1000 % 60);
+            var minute = parseInt(total / 1000 / 60 % 60);
+            var hour = parseInt(total / 1000 / 60 / 60 % 24);
+            var day = parseInt(total / 1000 / 60 / 60 / 24);
+        }
 
         day = day > 9 ? '' + day : '0' + day;
         second = second > 9 ? '' + second : '0' + second;
@@ -391,6 +399,8 @@
         $('#time .minute .t').html(minute.charAt(1));
         $('#time .second .o').html(second.charAt(0));
         $('#time .second .t').html(second.charAt(1));
+
+        return total;
     }
 
     $(function(){
@@ -409,7 +419,9 @@
             }
             ]
         }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-            $('.setMeal-nav .item').removeClass('act').eq(nextSlide+4).addClass('act');
+            var next = nextSlide + 4;
+            if (w_width < 482) { next = nextSlide + 3; }
+            $('.setMeal-nav .item').removeClass('act').eq(next).addClass('act');
             $('.setMeal-cont').slick('slickGoTo', nextSlide);
         });
         $('.setMeal-cont').slick({
