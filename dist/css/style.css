@@ -756,17 +756,18 @@ a.pswp__share--download:hover{background:#ddd}
 .inp{height:.78rem;width:100%;background:#fff;border-radius:.14rem;text-align:center;font-size:.26rem;color:#b3b3b3;box-shadow:inset 0 .07rem .05rem rgba(0,0,0,.2)}
 .inp::-webkit-input-placeholder{color:#b3b3b3}
 .btn-submit{height:.78rem;width:3.3rem;max-width:100%;background:#b2201f;border-radius:.4rem;font-size:.3rem;color:#fff}
-.coupon-area{background:#c33d3c}
+.coupon-area{background:#fee6cc url(../images/bg4.png) no-repeat center top/100%}
+.coupon-pa{padding:0 .2rem}
 .coupon-bg{vertical-align:bottom;width:100%}
-.spe-coupon{padding-top:.5rem;padding-bottom:.5rem;background:#fee6cc}
+.spe-coupon{padding-top:.7rem;padding-bottom:0}
 .spe-coupon .pai{padding-bottom:40.30534%}
-.spe-coupon .receive{width:1.16rem;height:auto;top:50%;margin-top:-.58rem;right:0;left:auto}
-.coupon-wrap{padding-top:.35rem;padding-bottom:.45rem;background:#c33d3c;color:#fff}
-.coupon-wrap .freeTx{font-size:.2rem;padding-left:.2rem}
-.coupon-list{margin-left:-.18rem}
-.coupon-list li{width:50%;float:left;margin-bottom:.18rem}
-.coupon-list a{display:block;margin-left:.18rem}
-.coupon-list .pai{padding-bottom:54.82866%}
+.spe-coupon .receive{width:1.98rem;height:auto;top:0;right:0}
+.coupon-wrap{padding-top:.35rem;padding-bottom:.45rem}
+.coupon-wrap .freeTx{font-size:.2rem;color:#333}
+.coupon-list{margin-left:-.55rem;padding-bottom:.15rem}
+.coupon-list li{width:50%;float:left;margin-bottom:.4rem}
+.coupon-list a{display:block;margin-left:.55rem}
+.coupon-list .pai{padding-bottom:117.31449%}
 .setMeal-area{border-top:.5rem solid #fee6cc;padding-top:.5rem}
 .setMeal-area .setMeal-cont-wrap{margin-top:.55rem}
 .setMeal-area .setMeal-nav{margin-top:.55rem}

@@ -67,46 +67,45 @@
   color: #fff; }
 
 .coupon-area {
-  background: #c33d3c; }
+  background: #fee6cc url("../images/bg4.png") no-repeat center top/100%; }
+
+.coupon-pa {
+  padding: 0 0.2rem; }
 
 .coupon-bg {
   vertical-align: bottom;
   width: 100%; }
 
 .spe-coupon {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background: #fee6cc; }
+  padding-top: 0.7rem;
+  padding-bottom: 0; }
   .spe-coupon .pai {
     padding-bottom: 40.30534%; }
   .spe-coupon .receive {
-    width: 1.16rem;
+    width: 1.98rem;
     height: auto;
-    top: 50%;
-    margin-top: -0.58rem;
-    right: 0;
-    left: auto; }
+    top: 0;
+    right: 0; }
 
 .coupon-wrap {
   padding-top: 0.35rem;
-  padding-bottom: 0.45rem;
-  background: #c33d3c;
-  color: #fff; }
+  padding-bottom: 0.45rem; }
   .coupon-wrap .freeTx {
     font-size: 0.2rem;
-    padding-left: 0.2rem; }
+    color: #333; }
 
 .coupon-list {
-  margin-left: -0.18rem; }
+  margin-left: -0.55rem;
+  padding-bottom: 0.15rem; }
   .coupon-list li {
     width: 50%;
     float: left;
-    margin-bottom: 0.18rem; }
+    margin-bottom: 0.4rem; }
   .coupon-list a {
     display: block;
-    margin-left: 0.18rem; }
+    margin-left: 0.55rem; }
   .coupon-list .pai {
-    padding-bottom: 54.82866%; }
+    padding-bottom: 117.31449%; }
 
 .setMeal-area {
   border-top: 0.5rem solid #fee6cc;
