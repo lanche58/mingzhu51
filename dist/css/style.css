@@ -756,7 +756,8 @@ a.pswp__share--download:hover{background:#ddd}
 .inp{height:.78rem;width:100%;background:#fff;border-radius:.14rem;text-align:center;font-size:.26rem;color:#b3b3b3;box-shadow:inset 0 .07rem .05rem rgba(0,0,0,.2)}
 .inp::-webkit-input-placeholder{color:#b3b3b3}
 .btn-submit{height:.78rem;width:3.3rem;max-width:100%;background:#b2201f;border-radius:.4rem;font-size:.3rem;color:#fff}
-.coupon-area{background:#fee6cc url(../images/bg4.png) no-repeat center top/100%}
+.coupon-area{background:#c33d3c}
+.coupon-area .container{background:#fee6cc url(../images/bg4.png) no-repeat center top/100%}
 .coupon-pa{padding:0 .2rem}
 .coupon-bg{vertical-align:bottom;width:100%}
 .spe-coupon{padding-top:.7rem;padding-bottom:0}
@@ -870,8 +871,8 @@ a.pswp__share--download:hover{background:#ddd}
 100%{-webkit-transform:translateY(-10%);-moz-transform:translateY(-10%);transform:translateY(-10%)}
 }
 .upDown{-webkit-animation:upDown 1.2s linear alternate infinite;-moz-animation:upDown 1.2s linear alternate infinite;animation:upDown 1.2s linear alternate infinite}
-.ly-box{background:#333;display:none}
-.ly-box .icon{position:absolute;z-index:199;bottom:100%;right:-.1rem;width:.6rem;height:.6rem;margin-bottom:.25rem;line-height:.6rem;text-align:center;color:#fff;font-size:.24rem}
+.ly-box{background:rgba(0,0,0,.8);display:none}
+.ly-box .icon{position:absolute;z-index:199;bottom:100%;right:-.1rem;width:.6rem;height:.6rem;margin-bottom:.25rem;line-height:.6rem;text-align:center;color:#fff;font-size:.24rem;display:block;cursor:pointer}
 .ly-box .icon:after{content:"";position:absolute;top:0;bottom:0;left:0;right:0;border:.02rem solid #fff;border-radius:50%}
 .ly-cont{left:6%;right:6%;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
 .receive-popup{display:none;padding:.8rem 20% .6rem;background:#fff}

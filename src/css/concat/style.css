@@ -67,6 +67,9 @@
   color: #fff; }
 
 .coupon-area {
+  background: #c33d3c; }
+
+.coupon-area .container {
   background: #fee6cc url("../images/bg4.png") no-repeat center top/100%; }
 
 .coupon-pa {
@@ -521,7 +524,7 @@
   animation: upDown 1.2s linear alternate infinite; }
 
 .ly-box {
-  background: #333;
+  background: rgba(0, 0, 0, 0.8);
   display: none; }
   .ly-box .icon {
     position: absolute;
@@ -534,7 +537,9 @@
     line-height: 0.6rem;
     text-align: center;
     color: #fff;
-    font-size: 0.24rem; }
+    font-size: 0.24rem;
+    display: block;
+    cursor: pointer; }
     .ly-box .icon:after {
       content: "";
       position: absolute;

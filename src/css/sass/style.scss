@@ -84,8 +84,10 @@
     font-size: 0.3rem;
     color: #fff;
 }
-
 .coupon-area{
+    background: $mc1;
+}
+.coupon-area .container{
     background: $mc2 url('../images/bg4.png') no-repeat center top/100%;
 }
 
@@ -607,7 +609,7 @@
 }
 
 .ly-box{
-    background: $fc1;
+    background: rgba(0,0,0,.8);
     display: none;
     .icon{
         position: absolute;
@@ -621,6 +623,8 @@
         text-align: center;
         color: #fff;
         font-size: 0.24rem;
+        display: block;
+        cursor: pointer;
         &:after{
             @include ba;
             @include tblr;
