@@ -753,6 +753,7 @@ a.pswp__share--download:hover{background:#ddd}
 .activity-form .cont{background:#fee6cc;padding:.7rem .45rem .6rem}
 .activity-form .inp-wrap+.inp-wrap{margin-top:.25rem}
 .activity-form .inp-wrap:last-child{text-align:center;margin-top:.35rem}
+.sele2{height:.78rem;width:100%;padding-left:.2rem;font-size:.2rem;background:#fff;border-radius:.14rem;color:#b3b3b3;box-shadow:inset 0 .07rem .05rem rgba(0,0,0,.2)}
 .inp{height:.78rem;width:100%;background:#fff;border-radius:.14rem;text-align:center;font-size:.26rem;color:#b3b3b3;box-shadow:inset 0 .07rem .05rem rgba(0,0,0,.2)}
 .inp::-webkit-input-placeholder{color:#b3b3b3}
 .btn-submit{height:.78rem;width:3.3rem;max-width:100%;background:#b2201f;border-radius:.4rem;font-size:.3rem;color:#fff}
@@ -876,10 +877,19 @@ a.pswp__share--download:hover{background:#ddd}
 .ly-box .icon:after{content:"";position:absolute;top:0;bottom:0;left:0;right:0;border:.02rem solid #fff;border-radius:50%}
 .ly-cont{left:6%;right:6%;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
 .receive-popup{display:none;padding:.8rem 20% .6rem;background:#fff}
-.receive-popup .inp-wrap+.inp-wrap .inp2{margin-top:.27rem}
+.receive-popup .inp-wrap+.inp-wrap .inp2,.receive-popup .inp-wrap+.inp-wrap .sele-item{margin-top:.27rem}
 .receive-popup .btn-submit{width:3rem;margin-top:.35rem}
+.inp-wrap.clearfix{margin-left:-.1rem}
+.sele-item{width:33.33%;float:left;padding-left:.1rem;position:relative}
+.sele-item:before{content:"";position:absolute;right:.2rem;top:50%;margin-top:-.04rem;width:0;height:0;border-left:.05rem solid transparent;border-right:.05rem solid transparent;border-top:.08rem solid;color:#666}
+.sele{border:1px solid #ccc;width:100%;border-radius:.14rem;height:.78rem;color:#b3b3b3;font-size:.2rem;padding-left:.2rem}
+.sele option{padding:0}
 .inp2{border:1px solid #ccc;border-radius:.14rem;height:.78rem;width:100%;text-align:center;color:#b3b3b3;font-size:.26rem;-webkit-transition:.3s;-moz-transition:.3s;transition:.3s}
 .inp2::-webkit-input-placeholder{color:#b3b3b3}
 .inp2:focus{border-color:#c33d3c}
 .receive-success{display:none;text-align:center}
 .receive-success>img{vertical-align:bottom;width:5.26rem}
+@media screen and (max-width:481px){
+.receive-popup{padding-left:10%;padding-right:10%}
+.coupon-wrap .freeTx,.lowPrice-grab-area>.freeTx,.lowPrice-time .slot,.page-title h3.ti,.sele,.sele2{font-size:.26rem}
+}
